@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="app.css" />
+</head>
+<body>
+  https://api.openweathermap.org/data/2.5/weather?q={atlanta}&appid={API key}
+  <div class="container">
+    <div class=`app-title`>
+      <p> weather  infop</p>
+      <input
+      id=`search`
+      type=`text`
+      placeholder=`Enter the city`
+      autocomplete="off" />
+    </div>
+    <div class="temparture-value"></div>
+      <p>- * <span>{</span></p>
+    </div>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./api.css"/>
+    <title>Document</title>
+ <script>
+    
+
+    fetch('https://api.openweathermap.org/data/2.5/weather?q=Atlanta&appid=8e26f47e399aa8d1fad4ebc7014abeee')
+.then((response) => response.json())
+.then((data) => console.log);
+
+    </script>
+    
+    </head>
+
+   
+    <body>
+        <h1> Today's Weather </h1>
+        <button onclick="getWeather()"> Get Weather</button>
+</body>
+
+<script src="./api.js"></script>
+</body>
+</html>
+
+
+
